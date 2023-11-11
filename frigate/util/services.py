@@ -231,6 +231,8 @@ def get_intel_gpu_stats() -> dict[str, str]:
         "-",
         "-s",
         "1",
+        "-d",
+        "drm:/dev/dri/renderD128",
     ]
 
     p = sp.run(
